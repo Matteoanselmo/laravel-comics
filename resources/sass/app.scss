@@ -28,7 +28,7 @@ body{
 }
 #jumbo{
     height: 45vh;
-    background-image: url(../../public/images/jumbotron.jpg);
+    background-image: url('/images/jumbotron.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -97,7 +97,7 @@ body{
 
 }
 #first-footer-section{
-    background-image: url("../assets/img/footer-bg.jpg");
+    background-image: url("/images/footer-bg.jpg");
     .lists-wrapper{
     justify-content: start;
     align-items: flex-start;
@@ -106,7 +106,7 @@ body{
     }
     }
     #logo-bg{
-    background-image: url("../assets/img/dc-logo-bg.png");
+    background-image: url("/images/dc-logo-bg.png");
     height: 23rem;
     width: 70%;
     background-position: center;

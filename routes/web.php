@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('layouts.base');
+// }) -> name('home-page');
+
 Route::get('/', function () {
-
-    return view('layouts.base');
-}) -> name('home-page');
-
-Route::get('/products', function () {
     $comics = config('comics');
-    return view('guest.product', ['comics' => $comics]);
+    $links = config('footer-list');
+    return view('guest.product', ['comics' => $comics, 'links' => $links] );
 }) -> name('product-page');

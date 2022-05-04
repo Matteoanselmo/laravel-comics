@@ -1,5 +1,6 @@
 @extends('layouts.base')
-@section('product')
+
+@section('main-content')
 <div>
     <section id="main-content" >
         <div class="container centralized-item card-propeties-wrapper">

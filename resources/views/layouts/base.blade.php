@@ -12,7 +12,8 @@
 
     @include('partials.jumbotron')
     <main>
-        @yield('product')
+        @yield('main-content')
     </main>
+    @include('partials.footer')
 </body>
 </html>
