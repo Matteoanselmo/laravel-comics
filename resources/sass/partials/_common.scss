@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+.my-text-white{
+    color: white;
+}
+.footer-list{
+    li{
+        list-style-type: none;
+        a{
+            color: #888888;
+            text-decoration: none;
+        }
+    }
+}
+
+.centralized-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
