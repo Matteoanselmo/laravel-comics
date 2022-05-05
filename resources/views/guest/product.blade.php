@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('main-content')
-<div>
+<div id="single-product-container">
     <div id="divisore"></div>
     <section class="main-single-content main-content">
         <div class="container centralized-item card-propeties-wrapper">
@@ -99,30 +99,30 @@
     </section>
 
 
-    {{-- <section id="card-section">
+    <section id="card-section">
         <div class="container centralized-item card-container">
             <div class="centralized-item card-wrapper" v-for="(card, index) in mainMerch" :key="index">
-                <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="digital comics card`">
                 <p>digital comics</p>
+                <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="digital comics card`">
             </div>
             <div class="centralized-item card-wrapper" v-for="(card, index) in mainMerch" :key="index">
-                <img src="{{asset('images/buy-comics-merchandise.png')}}" alt="digital comics card`">
                 <p>dc merchandise</p>
+                <img src="{{asset('images/buy-comics-merchandise.png')}}" alt="digital comics card`">
             </div>
             <div class="centralized-item card-wrapper" v-for="(card, index) in mainMerch" :key="index">
-                <img src="{{asset('images/buy-comics-subscriptions.png')}}" alt="digital comics card`">
                 <p>subscritpion</p>
+                <img src="{{asset('images/buy-comics-subscriptions.png')}}" alt="digital comics card`">
             </div>
             <div class="centralized-item card-wrapper" v-for="(card, index) in mainMerch" :key="index">
-                <img src="{{asset('images/buy-comics-shop-locator.png')}}" alt="digital comics card`">
                 <p>comic shop locator</p>
+                <img src="{{asset('images/buy-comics-shop-locator.png')}}" alt="digital comics card`">
             </div>
             <div class="centralized-item card-wrapper" v-for="(card, index) in mainMerch" :key="index">
-                <img src="{{asset('images/buy-dc-power-visa.svg')}}" alt="digital comics card`">
                 <p>dc power visa</p>
+                <img src="{{asset('images/buy-dc-power-visa.svg')}}" alt="digital comics card`">
             </div>
         </div>
-    </section> --}}
+    </section>
     @dump($comics)
 </div>
 @endsection
