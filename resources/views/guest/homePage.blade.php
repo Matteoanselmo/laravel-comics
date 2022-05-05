@@ -2,41 +2,26 @@
 
 @section('main-content')
 <div>
-    <div id="divisore"></div>
-    <section class="main-single-content main-content">
+    <section class="main-content" >
         <div class="container centralized-item card-propeties-wrapper">
             <button class="current-series">
-                <img src="{{$comics['thumb']}}" alt="{{$comics['title']}}">
+                <span>current series</span>
             </button>
-            <div>
-                <h1>
-                    {{$comics['title']}}
-                </h1>
-                <div class="check-container">
-                    <div class="check-price-wrapper">
-                        <p>
-                            U.S Price:
-                            <span>
-                                {{$comics['price']}}
-                            </span>
-                        </p>
-                        <p>
-                            AVAIBLE
-                        </p>
-                    </div>
-                    <button>
-                        Check Availability
-                    </button>
-                </div>
+            @foreach ($comics as $product )
+            <div class="main-card">
+                <img src="{{$product['thumb']}}" alt="{{$product['title']}}">
                 <p>
-                    {{$comics['description']}}
+                    <a href="#">
+                        {{$product['title']}}
+                    </a>
                 </p>
             </div>
+            @endforeach
         </div>
     </section>
 
 
-    {{-- <section id="card-section">
+    <section id="card-section">
         <div class="container centralized-item card-container">
             <div class="centralized-item card-wrapper" v-for="(card, index) in mainMerch" :key="index">
                 <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="digital comics card`">
@@ -59,7 +44,6 @@
                 <p>dc power visa</p>
             </div>
         </div>
-    </section> --}}
-    @dump($comics)
+    </section>
 </div>
 @endsection

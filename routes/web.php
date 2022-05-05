@@ -20,5 +20,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $comics = config('comics');
     $links = config('footer-list');
-    return view('guest.product', ['comics' => $comics, 'links' => $links] );
-}) -> name('product-page');
+    return view('guest.homePage', ['comics' => $comics, 'links' => $links] );
+}) -> name('home-page');
+
+Route::get('/{id}', function ($id) {
+    $comics = config('comics');
+    $links = config('footer-list');
+    if(is_numeric($id) && $id >= 0 && $id < count($comics)){
+        return view('guest.product', ['comics' => $comics[$id], 'links' => $links] );
+    } else{
+        abort(404);
+    }
+}) -> name('home-product');

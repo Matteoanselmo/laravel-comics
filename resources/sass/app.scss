@@ -32,7 +32,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-#main-content{
+.main-content{
     background-color: black;
     color: white;
     padding: 4rem 0;
@@ -73,6 +73,58 @@ body{
         height: 90%;
         object-fit: none;
         object-position: top;
+        }
+    }
+}
+div#divisore{
+    height: 100px;
+    width: 100vw;
+    background-color: #0C7CEC;
+}
+.main-single-content{
+    background-color: white;
+    color: black;
+    padding: 5rem 0;
+
+    button.current-series{
+        top: -23rem !important;
+        padding: .2rem !important;
+        background-color: white !important;
+    }
+    h1{
+        color: #003F5E;
+        margin-bottom: 1.5rem;
+    }
+    div.check-container{
+        margin-bottom: 1.5rem;
+        display: flex;
+        padding: 0 .5rem;
+        background-color: #55BA59;
+        border-bottom: 1px solid #003F5E;
+        color: white;
+        height: 40px;
+        button{
+            border: none;
+            padding: 0;
+            background: none;
+            margin: 0 auto;
+            color: white;
+            font-weight: bold;
+        }
+        div.check-price-wrapper{
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            border-right: 1px solid #003F5E;
+            padding: 0 .4rem;
+            height: 100%;
+            align-items: center;
+            p{
+                color: #96F99C;
+                span{
+                    color: white;
+                }
+            }
         }
     }
 }
