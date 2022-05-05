@@ -7,11 +7,11 @@
             <button class="current-series">
                 <span>current series</span>
             </button>
-            @foreach ($comics as $product )
+            @foreach ($comics as $index => $product )
             <div class="main-card">
                 <img src="{{$product['thumb']}}" alt="{{$product['title']}}">
                 <p>
-                    <a href="#">
+                    <a href="{{route("home-product", ['id' => $index])}}">
                         {{$product['title']}}
                     </a>
                 </p>
