@@ -122,7 +122,5 @@
                 <img src="{{asset('images/buy-dc-power-visa.svg')}}" alt="digital comics card`">
             </div>
         </div>
-    </section>
-    @dump($comics)
 </div>
 @endsection

@@ -41,15 +41,15 @@ body {
   list-style-type: none;
   padding: 3.5rem 0.5rem;
 }
-#index-header ul li:hover {
-  border-bottom: 5px solid #0C7CEC;
-}
 #index-header ul li a {
   font-weight: 600;
   text-decoration: none;
   color: black;
 }
-#index-header ul li a:active, #index-header ul li a.active {
+#index-header ul li:active, #index-header ul li.active {
+  border-bottom: 5px solid #0C7CEC;
+}
+#index-header ul li:active a, #index-header ul li.active a {
   color: #0C7CEC;
 }
 
@@ -95,6 +95,10 @@ body {
 }
 .main-content .main-card p {
   text-transform: uppercase;
+}
+.main-content .main-card p a {
+  text-decoration: none;
+  color: white;
 }
 .main-content .main-card p, .main-content .main-card img {
   margin-bottom: 0.8rem;
