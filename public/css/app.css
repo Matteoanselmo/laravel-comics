@@ -118,16 +118,27 @@ div#divisore {
   color: black;
   padding: 5rem 0;
 }
-.main-single-content button.current-series {
+.main-single-content div.container {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+.main-single-content div.container button.current-series {
   top: -23rem !important;
   padding: 0.2rem !important;
   background-color: white !important;
 }
-.main-single-content h1 {
+.main-single-content div.container div.info-card {
+  width: 65%;
+}
+.main-single-content div.container div.info-card p {
+  color: grey;
+}
+.main-single-content div.container div.info-card h1 {
   color: #003F5E;
   margin-bottom: 1.5rem;
 }
-.main-single-content div.check-container {
+.main-single-content div.container div.info-card div.check-container {
   margin-bottom: 1.5rem;
   display: flex;
   padding: 0 0.5rem;
@@ -136,7 +147,7 @@ div#divisore {
   color: white;
   height: 40px;
 }
-.main-single-content div.check-container button {
+.main-single-content div.container div.info-card div.check-container button {
   border: none;
   padding: 0;
   background: none;
@@ -144,20 +155,46 @@ div#divisore {
   color: white;
   font-weight: bold;
 }
-.main-single-content div.check-container div.check-price-wrapper {
+.main-single-content div.container div.info-card div.check-container div.check-price-wrapper {
   width: 85%;
   display: flex;
   justify-content: space-between;
   border-right: 1px solid #003F5E;
-  padding: 0 0.4rem;
+  padding: 0 1rem;
   height: 100%;
   align-items: center;
 }
-.main-single-content div.check-container div.check-price-wrapper p {
+.main-single-content div.container div.info-card div.check-container div.check-price-wrapper p {
   color: #96F99C;
 }
-.main-single-content div.check-container div.check-price-wrapper p span {
+.main-single-content div.container div.info-card div.check-container div.check-price-wrapper p span {
   color: white;
+}
+.main-single-content div.container div.adv-container h4 {
+  text-align: end;
+  color: gray;
+}
+
+#section-talent-specs {
+  background-color: #F6F6F6;
+  color: #003F5E;
+}
+#section-talent-specs div.talent-specs-wrapper {
+  width: 50%;
+  margin: 0 1rem;
+}
+#section-talent-specs div.talent-specs-wrapper h1 {
+  border-bottom: 1px solid grey;
+  padding: 1rem 0;
+}
+#section-talent-specs div.talent-specs-wrapper div.talent-specs-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid grey;
+}
+#section-talent-specs div.talent-specs-wrapper div.talent-specs-info .my-brand-color {
+  color: #0C7CEC;
 }
 
 #card-section {

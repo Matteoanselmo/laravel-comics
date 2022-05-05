@@ -8,7 +8,7 @@
             <button class="current-series">
                 <img src="{{$comics['thumb']}}" alt="{{$comics['title']}}">
             </button>
-            <div>
+            <div class="info-card">
                 <h1>
                     {{$comics['title']}}
                 </h1>
@@ -31,6 +31,69 @@
                 <p>
                     {{$comics['description']}}
                 </p>
+            </div>
+            <div class="adv-container">
+                <h4>ADVERTISEMENT</h4>
+                <img src="{{asset('images/adv.jpg')}}" alt="adv image">
+            </div>
+        </div>
+    </section>
+
+    <section class="main-single-content main-content" id="section-talent-specs">
+        <div class="container">
+            <div class="talent-specs-wrapper">
+                <h1>
+                    Talent
+                </h1>
+                <div class="talent-specs-info">
+                    <p>
+                        Art by:
+                    </p>
+                    @foreach ($comics['artists'] as $artist )
+                        <p class="my-brand-color">
+                            {{$artist}}
+                        </p>
+                    @endforeach
+                </div>
+                <div class="talent-specs-info">
+                    <p>
+                        Written by:
+                    </p>
+                    @foreach ($comics['writers'] as $writer)
+                        <p class="my-brand-color">
+                            {{$writer}}
+                        </p>
+                    @endforeach
+                </div>
+            </div>
+            <div class="talent-specs-wrapper">
+                <h1>
+                    Specs
+                </h1>
+                <div class="talent-specs-info">
+                    <p>
+                        Series:
+                    </p>
+                    <p class="my-brand-color">
+                        {{$comics['series']}}
+                    </p>
+                </div>
+                <div class="talent-specs-info">
+                    <p>
+                        U.S Price:
+                    </p>
+                    <p>
+                        {{$comics['price']}}
+                    </p>
+                </div>
+                <div class="talent-specs-info">
+                    <p>
+                        On sale date:
+                    </p>
+                    <p>
+                        {{$comics['sale_date']}}
+                    </p>
+                </div>
             </div>
         </div>
     </section>
